@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="article_new">
+            <form action="register.php" method="post">
+                <fieldset>
+                    <legend>Основные данные</legend>
+                    <label>Логин: <input required name="login" minlength="3" maxlength="10" placeholder="Введите логин"
+                            type="text"></label>
+                    <label>Пароль: <input required name="passw" minlength="5" maxlength="10" placeholder="Пароль"
+                            type="password"></label>
+                    <label>Email: <input required name="email" placeholder="elail" type="email"></label>
+                    <label>Телефон: <input required name="phone" placeholder="Телефон" type="tel"></label>
+                    <label>Год рождения: <input required name="date" type="date"></label>
+                    <label class="avatar">Выбор аватара: <input required name="file" type="file"></label>
+                    <fieldset class="radio">
+                        <legend>Выберите пол</legend>
+                        <input id="rb1" type="radio" name="gender" value="male">
+                        <label class="rb1" for="rb1">Мужской</label>
+                        <input id="rb2" type="radio" name="gender" value="female">
+                        <label for="rb2">Женский</label>
+                    </fieldset>
+                    <fieldset class="checkbox">
+                        <legend>Хобби и интересы</legend>
+                        <h4>Выберите, что по нраву:</h4>
+                        <label><input name="photos" value="photos" type="checkbox">Фотография</label>
+                        <label><input name="music" value="music" type="checkbox">Музыка</label>
+                        <label><input name="video" value="video" type="checkbox">Видеосъемка</label>
+                        <label><input name="films" value="films" type="checkbox">Кино</label>
+                        <label><input name="cars" value="cars" type="checkbox">Машины</label>
+                        <label><input name="football" value="football" type="checkbox">Футбол</label>
+                        <label><input name="dance" value="dance" type="checkbox">Танцы</label>
+                    </fieldset>
+
+
+
+                    <fieldset>
+                        <legend>Модель фотоаппарата</legend>
+                        <select class="avatar" style="width:20em;" name="sel" id="sel">
+                            <option selected disabled value="">Выбери модель фотоаппарата</option>
+                            <option value="Nikon">Nikon</option>
+                            <option value="Sony">Sony</option>
+                            <option value="Fujifilm">Fujifilm</option>
+                            <option value="Olympus">Olympus</option>
+                            <option value="Panasonic">Panasonic</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Немного о себе</legend>
+                        <label for="txt">Подробная информация о себе:</label>
+                        <textarea required placeholder="Минимум 40 символов..." name="txt" id="txt" cols="60" rows="7"
+                            minlength="40"></textarea>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <button type="submit">Отправить</button>
+                    <button type="reset">Сбросить</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <ul class="rounded">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="gallery.html">Галерея изображений</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="page-nav.html">Навигация</a></li>
+        </ul>
+    </div>
+    <div class="footer">&copy; Bogaevskiy Dmitriy</div>
+</body>
+
+</html>
